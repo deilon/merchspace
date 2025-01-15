@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import Nav from "../Nav";
 import Item from "@/components/common/Item";
-import Category from "@/components/common/category";
+import Category from "@/components/common/Category";
+import { Button } from "@/components/ui/button";
 
 
 export default function FrontStore() {
@@ -25,7 +26,12 @@ export default function FrontStore() {
                 <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">Sale products</h4>
                 <Link to="/" className="text-sm font-medium">See More</Link>
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <Item />
+                <Item />
+                <Item />
+                <Item />
+                <Item />
                 <Item />
               </div>
             </section>
@@ -38,6 +44,45 @@ export default function FrontStore() {
               </div>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-8">
                 <Category />
+                <Category />
+                <Category />
+                <Category />
+                <Category />
+                <Category />
+                <Category />
+                <Category />
+                <Category />
+                <Category />
+                <Category />
+                <Category />
+                <Category />
+                <Category />
+                <Category />
+                <Category />
+              </div>
+            </section>
+
+            {/* For you */}
+            <section className="my-10">
+              <div className="product-section-title flex justify-between items-center mb-4">
+                <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">For you</h4>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <Item />
+                <Item />
+                <Item />
+                <Item />
+                <Item />
+                <Item />                
+                <Item />
+                <Item />
+                <Item />
+                <Item />
+                <Item />
+                <Item />
+              </div>
+              <div className="flex justify-center items-center my-20">
+                <Button variant="outline" size="lg">Load more</Button>
               </div>
             </section>
         </div>
