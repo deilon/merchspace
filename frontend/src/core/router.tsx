@@ -6,6 +6,7 @@ import Login from "../pages/customer/Login";
 import Signup from "../pages/customer/Signup";
 import NotFound from "../pages/NotFound";
 import FrontStore from "@/pages/guest/FrontStore";
+import Sale from "@/pages/guest/Sale";
 
 const router = createBrowserRouter([
     {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
             {
                 path: '/store',
                 element: <FrontStore />
+            },
+            {
+                path: '/sale',
+                element: <Sale />
             },
         ]
     },
