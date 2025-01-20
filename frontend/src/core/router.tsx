@@ -7,6 +7,7 @@ import Signup from "../pages/customer/Signup";
 import NotFound from "../pages/NotFound";
 import FrontStore from "@/pages/guest/FrontStore";
 import Sale from "@/pages/guest/Sale";
+import Categories from "@/pages/guest/Categories";
 
 const router = createBrowserRouter([
     {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
             {
                 path: '/sale',
                 element: <Sale />
+            },
+            {
+                path: '/categories',
+                element: <Categories />
             },
         ]
     },
