@@ -8,6 +8,7 @@ import NotFound from "../pages/NotFound";
 import FrontStore from "@/pages/guest/FrontStore";
 import Sale from "@/pages/guest/Sale";
 import Categories from "@/pages/guest/Categories";
+import CategoryPage from "@/pages/guest/CategoryPage";
 
 const router = createBrowserRouter([
     {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
             {
                 path: '/categories',
                 element: <Categories />
+            },
+            {
+                path: '/category-page',
+                element: <CategoryPage />
             },
         ]
     },
