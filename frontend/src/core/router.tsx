@@ -9,6 +9,7 @@ import FrontStore from "@/pages/guest/FrontStore";
 import Sale from "@/pages/guest/Sale";
 import Categories from "@/pages/guest/Categories";
 import CategoryPage from "@/pages/guest/CategoryPage";
+import ProductView from "@/pages/guest/ProductView";
 
 const router = createBrowserRouter([
     {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
             {
                 path: '/category-page',
                 element: <CategoryPage />
+            },
+            {
+                path: '/product',
+                element: <ProductView />
             },
         ]
     },
