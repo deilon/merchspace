@@ -6,7 +6,7 @@ export default function Sale() {
   return (
     <div className="container mx-auto">
         <Nav />
-        <section className="my-10">
+        <section className="my-5">
             <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-3">
                 Sale
             </h3>

@@ -7,6 +7,7 @@ import {
     BreadcrumbSeparator,
     BreadcrumbPage
 } from "@/components/ui/breadcrumb"
+import { Separator } from "@/components/ui/separator";
 import { Link } from "react-router";
 
 
@@ -16,7 +17,7 @@ export default function Categories() {
         <Nav /> 
 
         {/* Categories Breadcrumbs*/}
-        <section className="my-10 py-3">
+        <section className="my-5">
             <Breadcrumb>
                 <BreadcrumbList>
                     <BreadcrumbItem>
@@ -31,6 +32,8 @@ export default function Categories() {
                 </BreadcrumbList>
             </Breadcrumb>
         </section>
+
+        <Separator />
 
         <section className="my-10 mb-10">
           {/* == A == */}

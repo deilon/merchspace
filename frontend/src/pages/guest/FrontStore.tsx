@@ -20,7 +20,7 @@ export default function FrontStore() {
         </section>
 
         {/* Sale Products */}
-        <section className="my-10">
+        <section className="my-5">
           <div className="product-section-title flex justify-between items-center mb-4">
             <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">Sale products</h4>
             <Link to="/" className="text-sm font-medium">See More</Link>
@@ -36,7 +36,7 @@ export default function FrontStore() {
         </section>
 
         {/* Categories */}
-        <section className="my-10">
+        <section className="my-5">
           <div className="product-section-title flex justify-between items-center mb-4">
             <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">Categories</h4>
             <Link to="/" className="text-sm font-medium">See all categories</Link>
@@ -62,7 +62,7 @@ export default function FrontStore() {
         </section>
 
         {/* For you */}
-        <section className="my-10">
+        <section className="my-5">
           <div className="product-section-title flex justify-between items-center mb-4">
             <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">For you</h4>
           </div>

@@ -49,6 +49,8 @@ export default function ProductView() {
             </Breadcrumb>
         </section>
 
+        <Separator />
+
         {/* Product gallery & Overview */}
         <section className="my-5">
             <div className="flex space-x-10">
@@ -163,7 +165,7 @@ export default function ProductView() {
         <Separator />
         
         {/* Product Specification */}
-        <section className="mt-10 mb-5 lg:w-4/5">
+        <section className="my-5 lg:w-4/5">
             <h4 className="my-5 p-3 font-medium bg-neutral-100">Product Specification</h4>
             <div className="flex justify-between p-3">
                 <p className="w-1/5">Stock</p>

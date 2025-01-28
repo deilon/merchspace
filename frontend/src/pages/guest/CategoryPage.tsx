@@ -15,6 +15,7 @@ import {
     DropdownMenuTrigger,
   } from "@/components/ui/dropdown-menu"
 import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 
 
 export default function CategoryPage() {
@@ -23,7 +24,7 @@ export default function CategoryPage() {
         <Nav /> 
 
         {/* Categories Breadcrumbs*/}
-        <section className="my-10 border-b py-3">
+        <section className="my-5">
             <Breadcrumb>
                 <BreadcrumbList>
                     <BreadcrumbItem>
@@ -53,9 +54,11 @@ export default function CategoryPage() {
                 </BreadcrumbList>
             </Breadcrumb>
         </section>
+        
+        <Separator />
 
         {/* Category page products */}
-        <section className="my-10">
+        <section className="my-5">
           <div className="product-section-title flex justify-between items-center mb-4">
             <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">Headphones</h4>
           </div>
