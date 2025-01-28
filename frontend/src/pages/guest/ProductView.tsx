@@ -143,21 +143,21 @@ export default function ProductView() {
             </div>
 
             <div className="grid grid-rows grow">
-                <div className="flex lg:w-1/4 justify-between">
-                    <p className="text-stone-500">Ratings</p>
-                    <span className="text-sky-900 font-medium">6.5k</span>
+                <div className="flex justify-between">
+                    <p className="lg:w-1/5 md:grow lg:grow-0 text-stone-500">Ratings</p>
+                    <span className="text-sky-900 font-medium grow">6.5k</span>
                 </div>
-                <div className="flex lg:w-1/4 justify-between">
-                    <p className="text-stone-500">Products</p>
-                    <span className="text-sky-900 font-medium">10k</span>
+                <div className="flex justify-between">
+                    <p className="lg:w-1/5 md:grow lg:grow-0 text-stone-500">Products</p>
+                    <span className="text-sky-900 font-medium grow">10k</span>
                 </div>
-                <div className="flex lg:w-1/4 justify-between">
-                    <p className="text-stone-500">Joined</p>
-                    <span className="text-sky-900 font-medium">6 years ago</span>
+                <div className="flex justify-between">
+                    <p className="lg:w-1/5 md:grow lg:grow-0 text-stone-500">Joined</p>
+                    <span className="text-sky-900 font-medium grow">6 years ago</span>
                 </div>
-                <div className="flex lg:w-1/4 justify-between">
-                    <p className="text-stone-500">Followers</p>
-                    <span className="text-sky-900 font-medium">20k</span>
+                <div className="flex justify-between">
+                    <p className="lg:w-1/5 md:grow lg:grow-0 text-stone-500">Followers</p>
+                    <span className="text-sky-900 font-medium grow">20k</span>
                 </div>
             </div>
         </section>
