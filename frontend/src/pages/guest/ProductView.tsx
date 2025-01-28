@@ -162,7 +162,41 @@ export default function ProductView() {
 
         <Separator />
         
-        
+        {/* Product Specification */}
+        <section className="mt-10 mb-5 lg:w-4/5">
+            <h4 className="my-5 p-3 font-medium bg-neutral-100">Product Specification</h4>
+            <div className="flex justify-between p-3">
+                <p className="w-1/5">Stock</p>
+                <span className="text-sky-900 font-medium grow">106</span>
+            </div>
+            <div className="flex justify-between p-3">
+                <p className="w-1/5">Brand</p>
+                <span className="text-sky-900 font-medium grow">Store</span>
+            </div>
+            <div className="flex justify-between p-3">
+                <p className="w-1/5">Warranty Duration</p>
+                <span className="text-sky-900 font-medium grow">Value</span>
+            </div>
+            <div className="flex justify-between p-3">
+                <p className="w-1/5">Dimension</p>
+                <span className="text-sky-900 font-medium grow">For 17" – 36"</span>
+            </div>
+            <div className="flex justify-between p-3">
+                <p className="w-1/5">Ships From</p>
+                <span className="text-sky-900 font-medium grow">Philippines, Manila</span>
+            </div>
+        </section>
+
+        {/* Product Description */}
+        <section className="my-5 lg:w-4/5">
+            <h4 className="my-5 p-3 font-medium bg-neutral-100">Product Description</h4>
+            <div className="p-3">
+                <img src="/placeholder.svg" alt="Product description image" />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quo corporis commodi repellat magni tempore. Ratione quam facilis nesciunt, ex error, eius praesentium eum qui aliquam mollitia rem placeat dicta?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quo corporis commodi repellat magni tempore. Ratione quam facilis nesciunt, ex error, eius praesentium eum qui aliquam mollitia rem placeat dicta?</p>
+            </div>
+        </section>
+
     </div>
   )
 }
