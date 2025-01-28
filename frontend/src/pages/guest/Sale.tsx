@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 
 export default function Sale() {
   return (
-    <div className="container mx-auto">
+    <>
         <Nav />
-        <section className="my-5">
+        <section className="container mx-auto my-5">
             <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-3">
                 Sale
             </h3>
@@ -40,6 +40,6 @@ export default function Sale() {
                 <Button variant="outline" size="lg">Load more</Button>
             </div>
         </section>
-    </div>
+    </>
   )
 }
