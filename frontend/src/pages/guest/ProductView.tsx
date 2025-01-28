@@ -51,8 +51,8 @@ export default function ProductView() {
 
         {/* Product gallery & Overview */}
         <section className="my-5">
-            <div className="flex">
-                <section className="w-5/12 p-5">
+            <div className="flex space-x-10">
+                <section className="w-4/12">
                     <div className="flex flex-col">
                         <div className="bg-gray-100">
                             <img className="object-contain mx-auto" style={{height: 450}} src="/assets/images/unknown-headphone.png" alt="product image" />
@@ -79,7 +79,7 @@ export default function ProductView() {
                     </div>
                 </section>
 
-                <section className="flex flex-col w-7/12 p-5">
+                <section className="flex flex-col w-8/12">
                     <h1 className="scroll-m-20 text-4xl font-bold lg:text-5xl">
                         Product Name / Title
                     </h1>

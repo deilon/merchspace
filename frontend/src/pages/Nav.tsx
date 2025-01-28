@@ -13,17 +13,9 @@ export default function Nav() {
     <>
     <div className="flex justify-between items-center py-3">
         {/* Branding logo */}
-        <NavigationMenu>
-            <NavigationMenuList>
-                <NavigationMenuItem>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()} asChild>
-                        <Link to="/">
-                            marketplace-ecommerce
-                        </Link>
-                    </NavigationMenuLink>
-                </NavigationMenuItem>
-            </NavigationMenuList>
-        </NavigationMenu>
+        <Link className="font-medium" to="/">
+            Marketplace E-commerce
+        </Link>
         {/* Navigation links */}
         <NavigationMenu>
             <NavigationMenuList>
