@@ -5,52 +5,54 @@ import { Card, CardContent } from "@/components/ui/card";
 import Nav from "../Nav";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { Minus, Plus } from "lucide-react";
+import { Heart, Minus, Plus, PlusIcon, Store } from "lucide-react";
 import { Input } from "@/components/ui/input";
 
 export default function ProductView() {
   return (
     <div className="container mx-auto">
         <Nav />
-        <div className="my-10">
 
-            <div className="my-5">
-                <Breadcrumb>
-                    <BreadcrumbList>
-                        <BreadcrumbItem>
-                            <BreadcrumbLink href="/">Home</BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbSeparator />
-                        <BreadcrumbItem>
-                            <BreadcrumbLink href="/">Categories</BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbSeparator />
-                        <BreadcrumbItem>
-                            <DropdownMenu>
-                                <DropdownMenuTrigger className="flex items-center gap-1">
-                                    Electronics
-                                </DropdownMenuTrigger>
-                                <DropdownMenuContent align="start">
-                                    <DropdownMenuItem>Laptop</DropdownMenuItem>
-                                    <DropdownMenuItem>Mobile</DropdownMenuItem>
-                                    <DropdownMenuItem>Headphones</DropdownMenuItem>
-                                </DropdownMenuContent>
-                            </DropdownMenu>
-                        </BreadcrumbItem>
-                        <BreadcrumbSeparator />
-                        <BreadcrumbItem>
-                            <BreadcrumbLink href="/">Headphones</BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbSeparator />
-                        <BreadcrumbItem>
-                            <BreadcrumbPage className="font-semibold">Product Name / Title</BreadcrumbPage>
-                        </BreadcrumbItem>
-                    </BreadcrumbList>
-                </Breadcrumb>
-            </div>
+        {/* Product View breadcrumbs */}
+        <section className="my-5">
+            <Breadcrumb>
+                <BreadcrumbList>
+                    <BreadcrumbItem>
+                        <BreadcrumbLink href="/">Home</BreadcrumbLink>
+                    </BreadcrumbItem>
+                    <BreadcrumbSeparator />
+                    <BreadcrumbItem>
+                        <BreadcrumbLink href="/">Categories</BreadcrumbLink>
+                    </BreadcrumbItem>
+                    <BreadcrumbSeparator />
+                    <BreadcrumbItem>
+                        <DropdownMenu>
+                            <DropdownMenuTrigger className="flex items-center gap-1">
+                                Electronics
+                            </DropdownMenuTrigger>
+                            <DropdownMenuContent align="start">
+                                <DropdownMenuItem>Laptop</DropdownMenuItem>
+                                <DropdownMenuItem>Mobile</DropdownMenuItem>
+                                <DropdownMenuItem>Headphones</DropdownMenuItem>
+                            </DropdownMenuContent>
+                        </DropdownMenu>
+                    </BreadcrumbItem>
+                    <BreadcrumbSeparator />
+                    <BreadcrumbItem>
+                        <BreadcrumbLink href="/">Headphones</BreadcrumbLink>
+                    </BreadcrumbItem>
+                    <BreadcrumbSeparator />
+                    <BreadcrumbItem>
+                        <BreadcrumbPage className="font-semibold">Product Name / Title</BreadcrumbPage>
+                    </BreadcrumbItem>
+                </BreadcrumbList>
+            </Breadcrumb>
+        </section>
 
+        {/* Product gallery & Overview */}
+        <section className="my-5">
             <div className="flex">
-                <div className="w-5/12 p-5">
+                <section className="w-5/12 p-5">
                     <div className="flex flex-col">
                         <div className="bg-gray-100">
                             <img className="object-contain mx-auto" style={{height: 450}} src="/assets/images/unknown-headphone.png" alt="product image" />
@@ -75,9 +77,9 @@ export default function ProductView() {
                             </Carousel>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div className="flex flex-col w-7/12 p-5">
+                <section className="flex flex-col w-7/12 p-5">
                     <h1 className="scroll-m-20 text-4xl font-bold lg:text-5xl">
                         Product Name / Title
                     </h1>
@@ -107,12 +109,60 @@ export default function ProductView() {
                         </Button>
                     </div>
                     <span className="mt-4 text-sm text-gray-500">290 pieces available</span>
-                    <Button className="mt-4 w-[200px]">ADD TO CART</Button>
-                </div>
+                    <div className="flex items-center gap-2 mt-4">
+                        <Button className="w-[200px]">ADD TO CART</Button>
+                        <Button className="w-[200px]" variant="outline"><Heart/> WISHLIST</Button>
+                    </div>
+                </section>
+            </div>
+        </section>
 
+        <Separator />
+
+        {/* Shop Description */}
+        <section className="flex space-x-5 my-5">
+            <div className="flex items-center">
+                <img src="/placeholder.svg" className="rounded-full" width="100" height="100" alt="" />
+                <div className="ms-4">
+                    <p className="text-lg font-medium">Store Owner</p>
+                    <p className="text-xs mb-2 text-gray-500">Active 3 hours ago</p>
+                    <div className="flex items-center space-x-2">
+                        <Button variant="outline">
+                            <PlusIcon />
+                            Follow
+                        </Button>
+                        <Button variant="outline">
+                            <Store />
+                            View Store
+                        </Button>
+                    </div>
+                </div>
+                <Separator className="ms-10" orientation="vertical" />
             </div>
 
-        </div>
+            <div className="grid grid-rows grow">
+                <div className="flex lg:w-1/4 justify-between">
+                    <p className="text-stone-500">Ratings</p>
+                    <span className="text-sky-900 font-medium">6.5k</span>
+                </div>
+                <div className="flex lg:w-1/4 justify-between">
+                    <p className="text-stone-500">Products</p>
+                    <span className="text-sky-900 font-medium">10k</span>
+                </div>
+                <div className="flex lg:w-1/4 justify-between">
+                    <p className="text-stone-500">Joined</p>
+                    <span className="text-sky-900 font-medium">6 years ago</span>
+                </div>
+                <div className="flex lg:w-1/4 justify-between">
+                    <p className="text-stone-500">Followers</p>
+                    <span className="text-sky-900 font-medium">20k</span>
+                </div>
+            </div>
+        </section>
+
+        <Separator />
+        
+        
     </div>
   )
 }
