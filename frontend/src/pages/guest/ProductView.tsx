@@ -85,7 +85,7 @@ export default function ProductView() {
                         <h1 className="scroll-m-20 text-4xl font-bold lg:text-5xl">
                             Product Name / Title
                         </h1>
-                        <div className="flex items-center space-x-4 mt-4">
+                        <div className="flex space-x-4 mt-4">
                             <div className="rating text-yellow-500">
                                 <span className="text-lg text-gray-500 me-2">4.9</span>
                                 <i className='bx bxs-star'></i>
