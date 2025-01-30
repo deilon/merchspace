@@ -1,12 +1,22 @@
+import Nav from "../Nav";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
-import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@radix-ui/react-dropdown-menu";
+import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdown-menu";
 import { Card, CardContent } from "@/components/ui/card";
-import Nav from "../Nav";
+import {
+    Pagination,
+    PaginationContent,
+    PaginationEllipsis,
+    PaginationItem,
+    PaginationLink,
+    PaginationNext,
+    PaginationPrevious,
+} from "@/components/ui/pagination"
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { Heart, Minus, Plus, PlusIcon, Store } from "lucide-react";
 import { Input } from "@/components/ui/input";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Heart, Minus, Plus, PlusIcon, Store, ThumbsUp } from "lucide-react";
 
 export default function ProductView() {
   return (
@@ -199,6 +209,174 @@ export default function ProductView() {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quo corporis commodi repellat magni tempore. Ratione quam facilis nesciunt, ex error, eius praesentium eum qui aliquam mollitia rem placeat dicta?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quo corporis commodi repellat magni tempore. Ratione quam facilis nesciunt, ex error, eius praesentium eum qui aliquam mollitia rem placeat dicta?</p>
             </div>
+            </div>
+        </section>
+
+        {/* Product Ratings */}
+        <section className="container mx-auto my-5">
+            <div className="lg:w-4/5 p-5 bg-white">
+                <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
+                    Product Ratings
+                </h4>
+
+                <div className="flex flex-row space-x-7 items-center bg-sky-50 p-10 my-5">
+                    <div className="flex flex-col">
+                        <p className="text-3xl font-medium">4.8 <span className="text-lg">out of 5</span></p>
+                        <div className="flex flex-row justify-between text-yellow-500 mt-3">
+                            <i className='bx bxs-star bx-sm'></i>
+                            <i className='bx bxs-star bx-sm'></i>
+                            <i className='bx bxs-star bx-sm'></i>
+                            <i className='bx bxs-star bx-sm'></i>
+                            <i className='bx bxs-star-half bx-sm'></i>
+                        </div>
+                    </div>
+                    <div className="grow flex flex-row flex-wrap gap-4">
+                        <Button variant="outline">All</Button>
+                        <Button variant="outline">5 Star (403)</Button>
+                        <Button variant="outline">4 Star (51)</Button>
+                        <Button variant="outline">3 Star (23)</Button>
+                        <Button variant="outline">2 Star (8)</Button>
+                        <Button variant="outline">1 Star (9)</Button>
+                        <Button variant="outline">With Comments (153)</Button>
+                        <Button variant="outline">With Media (118)</Button>
+                    </div>
+                </div>
+
+                <div className="my-5">
+                    
+                    <div className="my-5">
+                        <div className="flex flex-row items-start space-x-2">
+                            <Avatar>
+                                <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                                <AvatarFallback>CN</AvatarFallback>
+                            </Avatar>
+                            <div>
+                                <div>
+                                    <p className="font-medium">Juan Dela Cruz</p>
+                                    <p className="text-sm text-muted-foreground">2022-10-02 15:57</p>
+                                    <div className="text-yellow-400">
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star-half'></i>
+                                    </div>
+                                </div>
+                                <div className="my-2">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quo corporis commodi repellat magni tempore. Ratione quam facilis nesciunt, ex error, eius praesentium eum qui aliquam mollitia rem placeat dicta?</p>
+                                </div>
+                                <div className="my-2">
+                                    <Carousel className="w-full max-w-sm">
+                                        <CarouselContent className="-ml-1">
+                                            {Array.from({ length: 9 }).map((_, index) => (
+                                            <CarouselItem key={index} className="pl-1 basis-1/2 lg:basis-1/4">
+                                                <div className="p-1">
+                                                <Card>
+                                                    <CardContent className="flex aspect-square items-center justify-center p-2">
+                                                        <img className="object-contain aspect-square rounded" src="/assets/images/unknown-headphone.png" alt="Product image" />
+                                                    </CardContent>
+                                                </Card>
+                                                </div>
+                                            </CarouselItem>
+                                            ))}
+                                        </CarouselContent>
+                                        <CarouselPrevious />
+                                        <CarouselNext />
+                                    </Carousel>
+                                </div>
+                                <div className="flex items-center space-x-1">
+                                    <ThumbsUp size={16} className="text-muted-foreground" /> <span className="text-muted-foreground text-sm">24</span>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+
+                    <Separator />
+
+                    <div className="my-5">
+                        <div className="flex flex-row items-start space-x-2">
+                            <Avatar>
+                                <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                                <AvatarFallback>CN</AvatarFallback>
+                            </Avatar>
+                            <div>
+                                <div>
+                                    <p className="font-medium">Juan Dela Cruz</p>
+                                    <p className="text-sm text-muted-foreground">2022-10-02 15:57</p>
+                                    <div className="text-yellow-400">
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star'></i>
+                                        <i className='bx bxs-star-half'></i>
+                                    </div>
+                                </div>
+                                <div className="my-2">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quo corporis commodi repellat magni tempore. Ratione quam facilis nesciunt, ex error, eius praesentium eum qui aliquam mollitia rem placeat dicta?</p>
+                                </div>
+                                <div className="my-2">
+                                    <Carousel className="w-full max-w-sm">
+                                        <CarouselContent className="-ml-1">
+                                            {Array.from({ length: 9 }).map((_, index) => (
+                                            <CarouselItem key={index} className="pl-1 basis-1/2 lg:basis-1/4">
+                                                <div className="p-1">
+                                                <Card>
+                                                    <CardContent className="flex aspect-square items-center justify-center p-2">
+                                                        <img className="object-contain aspect-square rounded" src="/assets/images/unknown-headphone.png" alt="Product image" />
+                                                    </CardContent>
+                                                </Card>
+                                                </div>
+                                            </CarouselItem>
+                                            ))}
+                                        </CarouselContent>
+                                        <CarouselPrevious />
+                                        <CarouselNext />
+                                    </Carousel>
+                                </div>
+                                <div className="my-2">
+                                    <div className="w-1/3">
+                                        <img src="/placeholder.svg" className="object-contain" alt="Review image" />
+                                    </div>
+                                </div>
+                                <div className="flex items-center space-x-1">
+                                    <ThumbsUp size={16} className="text-muted-foreground" /> <span className="text-muted-foreground text-sm">24</span>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+
+                    <Separator />
+
+                    <div className="my-5">
+                        <Pagination>
+                            <PaginationContent>
+                                <PaginationItem>
+                                <PaginationPrevious href="#" />
+                                </PaginationItem>
+                                <PaginationItem>
+                                <PaginationLink href="#">1</PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                <PaginationLink href="#" isActive>
+                                    2
+                                </PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                <PaginationLink href="#">3</PaginationLink>
+                                </PaginationItem>
+                                <PaginationItem>
+                                <PaginationEllipsis />
+                                </PaginationItem>
+                                <PaginationItem>
+                                <PaginationNext href="#" />
+                                </PaginationItem>
+                            </PaginationContent>
+                        </Pagination>
+                    </div>
+
+
+                </div>
+
             </div>
         </section>
 
