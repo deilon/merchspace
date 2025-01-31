@@ -245,14 +245,14 @@ export default function ProductView() {
                 <div className="my-5">
                     
                     <div className="my-5">
-                        <div className="flex flex-row items-start space-x-2">
+                        <div className="flex flex-row items-start space-x-3">
                             <Avatar>
                                 <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
                                 <AvatarFallback>CN</AvatarFallback>
                             </Avatar>
                             <div>
                                 <div>
-                                    <p className="font-medium">Juan Dela Cruz</p>
+                                    <p className="font-medium mt-[-8px]">Juan Dela Cruz</p>
                                     <p className="text-sm text-muted-foreground">2022-10-02 15:57</p>
                                     <div className="text-yellow-400">
                                         <i className='bx bxs-star'></i>
@@ -294,14 +294,14 @@ export default function ProductView() {
                     <Separator />
 
                     <div className="my-5">
-                        <div className="flex flex-row items-start space-x-2">
+                        <div className="flex flex-row items-start space-x-3">
                             <Avatar>
                                 <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
                                 <AvatarFallback>CN</AvatarFallback>
                             </Avatar>
                             <div>
                                 <div>
-                                    <p className="font-medium">Juan Dela Cruz</p>
+                                    <p className="font-medium mt-[-8px]">Juan Dela Cruz</p>
                                     <p className="text-sm text-muted-foreground">2022-10-02 15:57</p>
                                     <div className="text-yellow-400">
                                         <i className='bx bxs-star'></i>
