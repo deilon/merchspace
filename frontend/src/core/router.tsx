@@ -10,6 +10,7 @@ import Sale from "@/pages/guest/Sale";
 import Categories from "@/pages/guest/Categories";
 import CategoryPage from "@/pages/guest/CategoryPage";
 import ProductView from "@/pages/guest/ProductView";
+import AccountSettings from "@/pages/customer/AccountSettings";
 
 const router = createBrowserRouter([
     {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
             {
                 path: '/account',
                 element: <Account />
+            },
+            {
+                path: '/account-settings',
+                element: <AccountSettings />
             },
         ]
     },
