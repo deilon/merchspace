@@ -14,7 +14,7 @@ const Cart: React.FC<CartBadgeProps> = ({ count }) => {
       <HoverCardTrigger>
         <div
           className="relative me-4 cursor-pointer"
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/cart")}
         >
           <ShoppingBag size={17} />
           {count > 0 && <span className="cart-badge">{count}</span>}

@@ -12,6 +12,7 @@ import ProductView from "@/pages/guest/ProductView";
 import AccountSettings from "@/pages/customer/account-settings/AccountSettings";
 import Profile from "@/pages/customer/account-settings/Profile";
 import ChangePassword from "@/pages/customer/account-settings/ChangePassword";
+import CartPage from "@/pages/guest/CartPage";
 
 const router = createBrowserRouter([
   {
@@ -69,6 +70,10 @@ const router = createBrowserRouter([
       {
         path: "/product",
         element: <ProductView />,
+      },
+      {
+        path: "/cart",
+        element: <CartPage />,
       },
     ],
   },
