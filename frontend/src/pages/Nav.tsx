@@ -7,7 +7,8 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import "../index.css";
-import { ModeToggle } from "@/components/mode-toggle";
+import { ModeToggle } from "@/components/common/mode-toggle";
+import Cart from "@/components/common/cart";
 
 export default function Nav() {
   return (
@@ -44,6 +45,9 @@ export default function Nav() {
                 >
                   <Link to="/login">Login</Link>
                 </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Cart count={3} />
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <ModeToggle />
