@@ -13,6 +13,7 @@ import AccountSettings from "@/pages/customer/account-settings/AccountSettings";
 import Profile from "@/pages/customer/account-settings/Profile";
 import ChangePassword from "@/pages/customer/account-settings/ChangePassword";
 import CartPage from "@/pages/guest/CartPage";
+import OrdersPage from "@/pages/customer/OrdersPage";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
             element: <ChangePassword />,
           },
         ],
+      },
+      {
+        path: "/orders",
+        element: <OrdersPage />,
       },
     ],
   },
