@@ -103,9 +103,7 @@ export default function OrdersPage() {
                             Parcel has been delivered
                           </span>
                           <Separator orientation="vertical" />
-                          <span className="text-sky-900 uppercase">
-                            {order.status}
-                          </span>
+                          <span className="uppercase">{order.status}</span>
                         </div>
                       </div>
                       <Separator className="my-3" />
@@ -127,9 +125,7 @@ export default function OrdersPage() {
                     </div>
                     <div className="flex space-x-2 items-center justify-end p-5 border border-t-0">
                       <span>Order total: </span>
-                      <h3 className="text-sky-900 font-medium text-2xl">
-                        ₱561
-                      </h3>
+                      <h3 className="font-medium text-2xl">₱561</h3>
                     </div>
                   </div>
                 ))}

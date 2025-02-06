@@ -14,6 +14,7 @@ import Profile from "@/pages/customer/account-settings/Profile";
 import ChangePassword from "@/pages/customer/account-settings/ChangePassword";
 import CartPage from "@/pages/guest/CartPage";
 import OrdersPage from "@/pages/customer/OrdersPage";
+import CheckoutPage from "@/pages/customer/checkout/CheckoutPage";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: "/orders",
         element: <OrdersPage />,
+      },
+      {
+        path: "/checkout",
+        element: <CheckoutPage />,
       },
     ],
   },
