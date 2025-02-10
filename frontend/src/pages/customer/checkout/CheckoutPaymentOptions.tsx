@@ -60,6 +60,10 @@ export default function CheckoutPaymentOptions() {
             <div className="text-muted-foreground">Shipping Subtotal</div>
             <div>₱108</div>
           </div>
+          <div className="flex flex-row justify-between w-[250px]">
+            <div className="text-muted-foreground">Total Payment:</div>
+            <div className="text-2xl">₱2,203</div>
+          </div>
         </CardContent>
         <CardFooter className="justify-end">
           <Button size="lg">Place Order</Button>
