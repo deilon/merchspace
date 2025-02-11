@@ -42,7 +42,7 @@ export default function ProductView() {
       <Nav />
 
       {/* Product View breadcrumbs */}
-      <section className="container mx-auto my-5">
+      <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 my-5">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -82,7 +82,7 @@ export default function ProductView() {
       <Separator />
 
       {/* Product gallery & Overview */}
-      <section className="container mx-auto my-5">
+      <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 my-5">
         <div className="flex space-x-5">
           <section className="bg-muted w-4/12">
             <div className="flex flex-col p-5">
@@ -174,7 +174,7 @@ export default function ProductView() {
       </section>
 
       {/* Shop Description */}
-      <section className="container mx-auto my-5">
+      <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 my-5">
         <div className="flex space-x-5 p-5 bg-muted">
           <div className="flex items-center">
             <img
@@ -231,7 +231,7 @@ export default function ProductView() {
       </section>
 
       {/* Product Specification */}
-      <section className="container mx-auto my-5 ">
+      <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 my-5 ">
         <div className="lg:w-4/5 p-5 bg-muted">
           <h4 className="p-3 font-medium">Product Specification</h4>
           <div className="flex justify-between p-3">
@@ -260,7 +260,7 @@ export default function ProductView() {
       </section>
 
       {/* Product Description */}
-      <section className="container mx-auto my-5">
+      <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 my-5">
         <div className="lg:w-4/5 p-5 bg-muted">
           <h4 className="p-3 font-medium">Product Description</h4>
           <div className="p-3">
@@ -286,7 +286,7 @@ export default function ProductView() {
       </section>
 
       {/* Product Ratings */}
-      <section className="container mx-auto my-5">
+      <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 my-5">
         <div className="lg:w-4/5 p-5 bg-muted">
           <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
             Product Ratings

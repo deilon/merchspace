@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 
 export default function CheckoutPaymentOptions() {
   return (
-    <section className="container mx-auto my-5">
+    <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 my-5">
       <h4 className="scroll-m-20 text-xl font-semibold tracking-tight my-5">
         Select Payment Options
       </h4>

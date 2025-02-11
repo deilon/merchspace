@@ -4,26 +4,29 @@ import Item from "@/components/common/Item";
 import Category from "@/components/common/Category";
 import { Button } from "@/components/ui/button";
 
-
 export default function FrontStore() {
   return (
     <>
-      <Nav/>
+      <Nav />
 
       {/* Hero */}
-      <section className="container mx-auto w-100 h-60 relative bg-muted my-5">
+      <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 h-60 relative my-5">
         <img
           src="/placeholder.svg"
           alt="Image"
-          className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
+          className="absolute inset-0 h-full w-full px-4 sm:px-6 object-cover dark:brightness-[0.2] dark:grayscale"
         />
       </section>
 
       {/* Sale Products */}
-      <section className="container mx-auto my-5">
+      <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 my-5">
         <div className="product-section-title flex justify-between items-center mb-4">
-          <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">Sale products</h4>
-          <Link to="/" className="text-sm font-medium">See More</Link>
+          <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
+            Sale products
+          </h4>
+          <Link to="/" className="text-sm font-medium">
+            See More
+          </Link>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           <Item />
@@ -36,10 +39,14 @@ export default function FrontStore() {
       </section>
 
       {/* Categories */}
-      <section className="container mx-auto my-5">
+      <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 my-5">
         <div className="product-section-title flex justify-between items-center mb-4">
-          <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">Categories</h4>
-          <Link to="/" className="text-sm font-medium">See all categories</Link>
+          <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
+            Categories
+          </h4>
+          <Link to="/" className="text-sm font-medium">
+            See all categories
+          </Link>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-8">
           <Category />
@@ -62,9 +69,11 @@ export default function FrontStore() {
       </section>
 
       {/* For you */}
-      <section className="container mx-auto my-5">
+      <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 my-5">
         <div className="product-section-title flex justify-between items-center mb-4">
-          <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">For you</h4>
+          <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
+            For you
+          </h4>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           <Item />
@@ -72,7 +81,7 @@ export default function FrontStore() {
           <Item />
           <Item />
           <Item />
-          <Item />                
+          <Item />
           <Item />
           <Item />
           <Item />
@@ -81,11 +90,11 @@ export default function FrontStore() {
           <Item />
         </div>
         <div className="flex justify-center items-center my-20">
-          <Button variant="outline" size="lg">Load more</Button>
+          <Button variant="outline" size="lg">
+            Load more
+          </Button>
         </div>
       </section>
-      
     </>
-  )
+  );
 }
-

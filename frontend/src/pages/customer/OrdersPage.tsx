@@ -68,7 +68,7 @@ export default function OrdersPage() {
   return (
     <>
       <Nav />
-      <section className="container mx-auto my-5">
+      <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 my-5">
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-3">
           Orders history
         </h3>

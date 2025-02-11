@@ -44,7 +44,7 @@ const data = [
 
 export default function CheckoutProducts() {
   return (
-    <section className="container mx-auto my-5">
+    <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 my-5">
       <Card>
         <CardContent className="p-5">
           <Table>
