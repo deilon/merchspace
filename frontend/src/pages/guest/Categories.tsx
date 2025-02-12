@@ -16,7 +16,7 @@ export default function Categories() {
       <Nav />
 
       {/* Categories Breadcrumbs*/}
-      <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 my-5">
+      <section className="container mx-auto my-5">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -34,7 +34,7 @@ export default function Categories() {
 
       <Separator />
 
-      <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 my-10 mb-10">
+      <section className="container mx-auto my-5">
         {/* == A == */}
         <div className="category-by-letter my-5">
           <div className="flex justify-between items-center border-b py-4 mb-4">

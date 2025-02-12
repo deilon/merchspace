@@ -13,7 +13,7 @@ import Cart from "@/components/common/cart";
 export default function Nav() {
   return (
     <nav className="h-16 bg-background border-b border-accent">
-      <div className="h-full flex items-center justify-between max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6">
+      <div className="container flex items-center justify-between mx-auto h-full">
         {/* Branding logo */}
         <Link className="font-medium" to="/">
           Marketplace E-commerce

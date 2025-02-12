@@ -23,7 +23,7 @@ export default function CategoryPage() {
       <Nav />
 
       {/* Categories Breadcrumbs*/}
-      <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 my-5">
+      <section className="container mx-auto my-5">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -57,7 +57,7 @@ export default function CategoryPage() {
       <Separator />
 
       {/* Category page products */}
-      <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 my-5">
+      <section className="container mx-auto my-5">
         <div className="product-section-title flex justify-between items-center mb-4">
           <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
             Headphones

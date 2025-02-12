@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 
 export default function CheckoutDeliveryAddress() {
   return (
-    <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 my-5">
+    <section className="container mx-auto my-5">
       <Card>
         <CardHeader>
           <CardTitle>Delivery Address</CardTitle>

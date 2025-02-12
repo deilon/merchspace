@@ -10,16 +10,16 @@ export default function FrontStore() {
       <Nav />
 
       {/* Hero */}
-      <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 h-60 relative my-5">
+      <section className="container mx-auto h-60 relative my-5">
         <img
           src="/placeholder.svg"
           alt="Image"
-          className="absolute inset-0 h-full w-full px-4 sm:px-6 object-cover dark:brightness-[0.2] dark:grayscale"
+          className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale rounded"
         />
       </section>
 
       {/* Sale Products */}
-      <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 my-5">
+      <section className="container mx-auto my-5">
         <div className="product-section-title flex justify-between items-center mb-4">
           <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
             Sale products
@@ -39,7 +39,7 @@ export default function FrontStore() {
       </section>
 
       {/* Categories */}
-      <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 my-5">
+      <section className="container mx-auto my-5">
         <div className="product-section-title flex justify-between items-center mb-4">
           <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
             Categories
@@ -69,7 +69,7 @@ export default function FrontStore() {
       </section>
 
       {/* For you */}
-      <section className="container max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 my-5">
+      <section className="container mx-auto my-5">
         <div className="product-section-title flex justify-between items-center mb-4">
           <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
             For you
