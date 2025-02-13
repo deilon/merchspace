@@ -12,6 +12,10 @@ const sidebarNavItems = [
     title: "Change Password",
     href: "/account-settings/change-password",
   },
+  {
+    title: "Addresses",
+    href: "/account-settings/addresses",
+  },
 ];
 
 export default function AccountSettings() {

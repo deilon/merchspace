@@ -15,6 +15,7 @@ import ChangePassword from "@/pages/customer/account-settings/ChangePassword";
 import CartPage from "@/pages/guest/CartPage";
 import OrdersPage from "@/pages/customer/OrdersPage";
 import CheckoutPage from "@/pages/customer/checkout/CheckoutPage";
+import AddressesSettings from "@/pages/customer/account-settings/AddressesSettings";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
           {
             path: "change-password",
             element: <ChangePassword />,
+          },
+          {
+            path: "addresses",
+            element: <AddressesSettings />,
           },
         ],
       },

@@ -1,4 +1,4 @@
-import { ModeToggle } from "@/components/common/mode-toggle";
+import ThemeToggle from "@/components/common/theme-toggle";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -8,7 +8,7 @@ export default function Signup() {
   return (
     <>
       <div className="grid justify-items-end bg-muted p-5">
-        <ModeToggle />
+        <ThemeToggle />
       </div>
       <div className="flex min-h-svh flex-col items-center justify-center bg-muted p-6 md:p-10">
         <div className="w-full max-w-sm md:max-w-3xl">

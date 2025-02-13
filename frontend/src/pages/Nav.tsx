@@ -7,8 +7,8 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import "../index.css";
-import { ModeToggle } from "@/components/common/mode-toggle";
 import Cart from "@/components/common/cart";
+import ThemeToggle from "@/components/common/theme-toggle";
 
 export default function Nav() {
   return (
@@ -49,7 +49,7 @@ export default function Nav() {
               <Cart count={3} />
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <ModeToggle />
+              <ThemeToggle />
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
