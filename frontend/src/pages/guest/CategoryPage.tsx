@@ -1,5 +1,5 @@
 import Item from "@/components/common/Item";
-import Nav from "../Nav";
+import Nav from "../../components/navbar/Nav";
 import {
   Breadcrumb,
   BreadcrumbItem,

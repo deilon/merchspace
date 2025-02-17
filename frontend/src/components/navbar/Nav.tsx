@@ -6,9 +6,10 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import "../index.css";
+import "../../index.css";
 import Cart from "@/components/common/cart";
 import ThemeToggle from "@/components/common/theme-toggle";
+import { Logo } from "./logo";
 
 export default function Nav() {
   return (
@@ -16,7 +17,7 @@ export default function Nav() {
       <div className="container flex items-center justify-between mx-auto h-full">
         {/* Branding logo */}
         <Link className="font-medium" to="/">
-          Marketplace E-commerce
+          <Logo />
         </Link>
         {/* Navigation links */}
         <NavigationMenu>

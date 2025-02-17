@@ -1,5 +1,5 @@
 import { Separator } from "@radix-ui/react-separator";
-import Nav from "../../Nav";
+import Nav from "../../../components/navbar/Nav";
 import { SidebarNav } from "./sidebar-nav";
 import { Outlet } from "react-router-dom";
 

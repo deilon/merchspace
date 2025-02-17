@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/table";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useState } from "react";
-import Nav from "../Nav";
+import Nav from "../../components/navbar/Nav";
 import { Button } from "@/components/ui/button";
 
 // Example data

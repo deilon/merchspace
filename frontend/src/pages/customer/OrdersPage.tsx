@@ -1,4 +1,4 @@
-import Nav from "../Nav";
+import Nav from "../../components/navbar/Nav";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { useState } from "react";
 import { Store } from "lucide-react";
