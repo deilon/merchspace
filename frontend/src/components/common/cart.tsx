@@ -2,6 +2,7 @@ import { HoverCard } from "@radix-ui/react-hover-card";
 import { ShoppingBag } from "lucide-react";
 import { HoverCardContent, HoverCardTrigger } from "../ui/hover-card";
 import { useNavigate } from "react-router-dom";
+import { Badge } from "../ui/badge";
 
 interface CartBadgeProps {
   count: number;
@@ -16,8 +17,10 @@ const Cart: React.FC<CartBadgeProps> = ({ count }) => {
           className="relative me-4 cursor-pointer"
           onClick={() => navigate("/cart")}
         >
-          <ShoppingBag size={17} />
-          {count > 0 && <span className="cart-badge">{count}</span>}
+          <ShoppingBag size={20} />
+          <Badge className="absolute -top-1 left-3 h-5 min-w-5 rounded-full px-1 font-mono tabular-nums bg-red-800 text-white">
+            {count}
+          </Badge>
         </div>
       </HoverCardTrigger>
       <HoverCardContent className="w-80 p-0">
@@ -32,7 +35,7 @@ const Cart: React.FC<CartBadgeProps> = ({ count }) => {
             </p>
           </div>
           <div>
-            <p className="text-sky-900 text-sm font-medium">P700</p>
+            <p className="text-muted-foreground text-sm font-medium">P700</p>
           </div>
         </div>
         <div className="flex justify-between items-center space-x-3 p-3 hover:bg-muted">
@@ -46,7 +49,7 @@ const Cart: React.FC<CartBadgeProps> = ({ count }) => {
             </p>
           </div>
           <div>
-            <p className="text-sky-900 text-sm font-medium">P700</p>
+            <p className="text-muted-foreground text-sm font-medium">P700</p>
           </div>
         </div>
         <div className="flex justify-between items-center space-x-3 p-3 hover:bg-muted">
@@ -60,7 +63,7 @@ const Cart: React.FC<CartBadgeProps> = ({ count }) => {
             </p>
           </div>
           <div>
-            <p className="text-sky-900 text-sm font-medium">P700</p>
+            <p className="text-muted-foreground text-sm font-medium">P700</p>
           </div>
         </div>
       </HoverCardContent>
