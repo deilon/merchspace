@@ -59,14 +59,6 @@ const router = createBrowserRouter([
     element: <GuestLayout />,
     children: [
       {
-        path: "/login",
-        element: <Login />,
-      },
-      {
-        path: "/signup",
-        element: <Signup />,
-      },
-      {
         path: "/store",
         element: <FrontStore />,
       },
@@ -91,6 +83,14 @@ const router = createBrowserRouter([
         element: <CartPage />,
       },
     ],
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/signup",
+    element: <Signup />,
   },
   {
     path: "*",

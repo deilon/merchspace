@@ -1,4 +1,3 @@
-import Nav from "../../components/navbar/Nav";
 import {
   Breadcrumb,
   BreadcrumbList,
@@ -39,8 +38,6 @@ import { Heart, Minus, Plus, PlusIcon, Store, ThumbsUp } from "lucide-react";
 export default function ProductView() {
   return (
     <>
-      <Nav />
-
       {/* Product View breadcrumbs */}
       <section className="container mx-auto my-5">
         <Breadcrumb>

@@ -10,7 +10,6 @@ import {
 } from "@/components/ui/table";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useState } from "react";
-import Nav from "../../components/navbar/Nav";
 import { Button } from "@/components/ui/button";
 
 // Example data
@@ -70,7 +69,6 @@ export default function CartPage() {
 
   return (
     <>
-      <Nav />
       <section className="container mx-auto my-5">
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-3">
           Shopping Cart

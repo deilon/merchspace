@@ -1,11 +1,9 @@
 import Item from "@/components/common/Item";
-import Nav from "../../components/navbar/Nav";
 import { Button } from "@/components/ui/button";
 
 export default function Sale() {
   return (
     <>
-      <Nav />
       <section className="container mx-auto my-5">
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-3">
           Sale

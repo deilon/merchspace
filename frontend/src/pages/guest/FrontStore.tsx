@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Nav from "../../components/navbar/Nav";
 import Item from "@/components/common/Item";
 import Category from "@/components/common/Category";
 import { Button } from "@/components/ui/button";
@@ -7,8 +6,6 @@ import { Button } from "@/components/ui/button";
 export default function FrontStore() {
   return (
     <>
-      <Nav />
-
       {/* Hero */}
       <section className="container mx-auto h-60 relative my-5">
         <img

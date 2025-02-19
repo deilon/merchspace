@@ -1,5 +1,4 @@
 import Item from "@/components/common/Item";
-import Nav from "../../components/navbar/Nav";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -20,8 +19,6 @@ import { Separator } from "@/components/ui/separator";
 export default function CategoryPage() {
   return (
     <>
-      <Nav />
-
       {/* Categories Breadcrumbs*/}
       <section className="container mx-auto my-5">
         <Breadcrumb>

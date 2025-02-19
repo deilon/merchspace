@@ -1,5 +1,4 @@
 import { Separator } from "@radix-ui/react-separator";
-import Nav from "../../../components/navbar/Nav";
 import { SidebarNav } from "./sidebar-nav";
 import { Outlet } from "react-router-dom";
 
@@ -21,7 +20,6 @@ const sidebarNavItems = [
 export default function AccountSettings() {
   return (
     <>
-      <Nav />
       <div className="container mx-auto my-5">
         <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
           Account Settings

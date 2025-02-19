@@ -1,4 +1,3 @@
-import Nav from "../../components/navbar/Nav";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -13,8 +12,6 @@ import { Link } from "react-router";
 export default function Categories() {
   return (
     <>
-      <Nav />
-
       {/* Categories Breadcrumbs*/}
       <section className="container mx-auto my-5">
         <Breadcrumb>
