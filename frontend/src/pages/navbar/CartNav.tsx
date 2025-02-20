@@ -1,14 +1,14 @@
 import { HoverCard } from "@radix-ui/react-hover-card";
 import { ShoppingBag } from "lucide-react";
-import { HoverCardContent, HoverCardTrigger } from "../ui/hover-card";
+import { HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { useNavigate } from "react-router-dom";
-import { Badge } from "../ui/badge";
+import { Badge } from "@/components/ui/badge";
 
 interface CartBadgeProps {
   count: number;
 }
 
-const Cart: React.FC<CartBadgeProps> = ({ count }) => {
+const CartNav: React.FC<CartBadgeProps> = ({ count }) => {
   const navigate = useNavigate();
   return (
     <HoverCard>
@@ -71,4 +71,4 @@ const Cart: React.FC<CartBadgeProps> = ({ count }) => {
   );
 };
 
-export default Cart;
+export default CartNav;

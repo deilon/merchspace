@@ -66,7 +66,7 @@ export default function OrdersPage() {
       : orders.filter((order) => order.status === selectedStatus);
   return (
     <>
-      <section className="container mx-auto my-5">
+      <section className="container mx-auto flex-1 my-5">
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-3">
           Orders history
         </h3>

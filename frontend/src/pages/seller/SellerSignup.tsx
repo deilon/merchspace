@@ -1,21 +1,24 @@
+import { Logo } from "@/pages/navbar/logo";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Separator } from "@/components/ui/separator";
 
-export default function Signup() {
+export default function SellerSignup() {
   return (
     <div className="flex min-h-svh flex-col items-center justify-center p-6 md:p-10">
       <div className="w-full max-w-sm md:max-w-3xl">
+        <div className="flex gap-6 justify-center py-5">
+          <Logo /> <Separator orientation="vertical" />{" "}
+          <span className="font-medium">Seller Center</span>
+        </div>
         <Card className="overflow-hidden p-0">
           <CardContent className="grid p-0 md:grid-cols-2">
             <form className="p-6 md:p-8">
               <div className="flex flex-col gap-6">
                 <div className="flex flex-col items-center text-center">
-                  <h1 className="text-2xl font-bold">
-                    Create <span className="text-emerald-400">customer</span>{" "}
-                    account
-                  </h1>
+                  <h1 className="text-2xl font-bold">Create account</h1>
                   <p className="text-balance text-muted-foreground">
                     Manage your orders and wishlists
                   </p>

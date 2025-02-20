@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Category() {
+export default function CategoryItem() {
   return (
     <Link to="/">
       <div className="category bg-muted p-5 border">

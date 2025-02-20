@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Item from "@/components/common/Item";
-import Category from "@/components/common/Category";
+import ItemProduct from "@/components/common/itemProduct";
+import CategoryItem from "../../components/common/categoryItem";
 import { Button } from "@/components/ui/button";
 
 export default function FrontStore() {
@@ -26,12 +26,12 @@ export default function FrontStore() {
           </Link>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
         </div>
       </section>
 
@@ -46,22 +46,22 @@ export default function FrontStore() {
           </Link>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-8">
-          <Category />
-          <Category />
-          <Category />
-          <Category />
-          <Category />
-          <Category />
-          <Category />
-          <Category />
-          <Category />
-          <Category />
-          <Category />
-          <Category />
-          <Category />
-          <Category />
-          <Category />
-          <Category />
+          <CategoryItem />
+          <CategoryItem />
+          <CategoryItem />
+          <CategoryItem />
+          <CategoryItem />
+          <CategoryItem />
+          <CategoryItem />
+          <CategoryItem />
+          <CategoryItem />
+          <CategoryItem />
+          <CategoryItem />
+          <CategoryItem />
+          <CategoryItem />
+          <CategoryItem />
+          <CategoryItem />
+          <CategoryItem />
         </div>
       </section>
 
@@ -73,18 +73,18 @@ export default function FrontStore() {
           </h4>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
         </div>
         <div className="flex justify-center items-center my-20">
           <Button variant="outline" size="lg">

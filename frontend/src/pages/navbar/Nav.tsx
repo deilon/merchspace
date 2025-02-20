@@ -7,7 +7,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import "../../index.css";
-import Cart from "@/components/common/cart";
+import CartNav from "./CartNav";
 import ThemeToggle from "@/components/common/theme-toggle";
 import { Logo } from "./logo";
 
@@ -27,7 +27,7 @@ export default function Nav() {
                 className={navigationMenuTriggerStyle()}
                 asChild
               >
-                <Link to="/">Become a seller</Link>
+                <Link to="/">Seller Center</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
@@ -47,7 +47,7 @@ export default function Nav() {
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Cart count={3} />
+              <CartNav count={3} />
             </NavigationMenuItem>
             <NavigationMenuItem>
               <ThemeToggle />

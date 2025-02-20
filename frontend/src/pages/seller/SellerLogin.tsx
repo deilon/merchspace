@@ -9,8 +9,10 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Logo } from "@/pages/navbar/logo";
+import { Separator } from "@/components/ui/separator";
 
-export default function Login({
+export default function SellerLogin({
   className,
   ...props
 }: React.ComponentProps<"div">) {
@@ -19,6 +21,10 @@ export default function Login({
       <div className="flex min-h-svh w-full items-center justify-center p-6 md:p-10">
         <div className="w-full max-w-sm">
           <div className={cn("flex flex-col gap-6", className)} {...props}>
+            <div className="flex gap-6 justify-center">
+              <Logo /> <Separator orientation="vertical" />{" "}
+              <span className="font-medium">Seller Center</span>
+            </div>
             <Card>
               <CardHeader>
                 <CardTitle>Login to your account</CardTitle>

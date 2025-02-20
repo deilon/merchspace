@@ -1,4 +1,4 @@
-import Item from "@/components/common/Item";
+import Item from "@/components/common/itemProduct";
 import { Button } from "@/components/ui/button";
 
 export default function Sale() {

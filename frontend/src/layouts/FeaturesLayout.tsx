@@ -1,8 +1,8 @@
-import Footer from "@/components/Footer";
-import Nav from "@/components/navbar/Nav";
+import Nav from "@/pages/navbar/Nav";
 import { Outlet } from "react-router-dom";
+import Footer from "@/pages/Footer";
 
-export default function GuestLayout() {
+export default function FeaturesLayout() {
   return (
     <>
       <Nav />

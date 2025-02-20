@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "../ui/card";
 
-export default function Item() {
+export default function ItemProduct() {
   return (
     <Link to="/" className="item">
       <Card>

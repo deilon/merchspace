@@ -6,7 +6,7 @@ import {
   TwitterIcon,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Logo } from "./navbar/logo";
+import { Logo } from "../pages/navbar/logo";
 
 const footerSections = [
   {

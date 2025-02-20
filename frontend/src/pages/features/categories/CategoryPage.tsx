@@ -1,4 +1,4 @@
-import Item from "@/components/common/Item";
+import ItemProduct from "@/components/common/itemProduct";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -61,18 +61,18 @@ export default function CategoryPage() {
           </h4>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
+          <ItemProduct />
         </div>
         <div className="flex justify-center items-center my-20">
           <Button variant="outline" size="lg">
