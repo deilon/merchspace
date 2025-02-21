@@ -4,7 +4,7 @@ import { RouterProvider } from "react-router-dom";
 import "./App.css";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "next-themes";
-import router from "./core/router.tsx";
+import router from "./routes/router.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

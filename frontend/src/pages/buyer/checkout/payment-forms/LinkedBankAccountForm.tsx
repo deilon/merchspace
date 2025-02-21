@@ -9,7 +9,7 @@ export default function LinkedBankAccountForm() {
           <RadioGroupItem value="lba" id="r1" />
           <Label htmlFor="r1" className="flex space-x-2 items-center">
             <img
-              src="./assets/images/payment-option-logos/ic_BPI_new.png"
+              src="/assets/images/payment-option-logos/ic_BPI_new.png"
               className="w-[40px] border"
             />
             <span>BPI Online</span>

@@ -1,10 +1,10 @@
-import '../App.css'
-import '../index.css'
+import "../App.css";
+import "../index.css";
 
 export default function NotFound() {
-    return(
-        <>
-            <h1 className="font-sans">404 CONTENT NOT FOUND</h1>
-        </>
-    )
+  return (
+    <div className="flex items-center justify-center h-screen">
+      <p className="text-gray-500 text-xl">404 Content not found</p>
+    </div>
+  );
 }

@@ -5,15 +5,15 @@ import { Outlet } from "react-router-dom";
 const sidebarNavItems = [
   {
     title: "Profile",
-    href: "/account-settings/profile",
+    href: "profile",
   },
   {
     title: "Change Password",
-    href: "/account-settings/change-password",
+    href: "change-password",
   },
   {
     title: "Addresses",
-    href: "/account-settings/addresses",
+    href: "addresses",
   },
 ];
 

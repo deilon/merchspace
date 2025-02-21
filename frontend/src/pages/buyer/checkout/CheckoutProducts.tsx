@@ -13,7 +13,7 @@ const data = [
   {
     id: "1",
     product: {
-      photo: "./placeholder.svg",
+      photo: "/placeholder.svg",
       name: 'OFFCOURT M3 "Black Halo" Mamba Kobe Oversized Tee',
     },
     unitPrice: "750",
@@ -23,7 +23,7 @@ const data = [
   {
     id: "2",
     product: {
-      photo: "./placeholder.svg",
+      photo: "/placeholder.svg",
       name: 'OFFCOURT "Mambas Forever" Kobe Oversized Graphic Tee',
     },
     unitPrice: "750",
@@ -33,7 +33,7 @@ const data = [
   {
     id: "3",
     product: {
-      photo: "./placeholder.svg",
+      photo: "/placeholder.svg",
       name: "HGHMNDS CLO. - HERE CHEETAH SHIRT",
     },
     unitPrice: "750",

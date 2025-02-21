@@ -9,7 +9,7 @@ const orders = [
   {
     id: 1,
     store: "OFFCOURT",
-    productImage: "./placeholder.svg",
+    productImage: "/placeholder.svg",
     product: "OFFCOURT M3 Mamba Kobe Oversized Tee",
     price: "750",
     qty: 3,
@@ -19,7 +19,7 @@ const orders = [
   {
     id: 2,
     store: "NIKE",
-    productImage: "./placeholder.svg",
+    productImage: "/placeholder.svg",
     product: "OFFCOURT M3 Mamba Kobe Oversized Tee",
     price: "750",
     qty: 3,
@@ -29,7 +29,7 @@ const orders = [
   {
     id: 3,
     store: "OFFCOURT",
-    productImage: "./placeholder.svg",
+    productImage: "/placeholder.svg",
     product: "OFFCOURT M3 Mamba Kobe Oversized Tee",
     price: "750",
     qty: 3,
@@ -39,7 +39,7 @@ const orders = [
   {
     id: 4,
     store: "NIKE",
-    productImage: "./placeholder.svg",
+    productImage: "/placeholder.svg",
     product: "OFFCOURT M3 Mamba Kobe Oversized Tee",
     price: "750",
     qty: 3,

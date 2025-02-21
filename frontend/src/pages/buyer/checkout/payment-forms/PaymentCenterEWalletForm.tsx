@@ -9,7 +9,7 @@ export default function PaymentCenterEWalletForm() {
           <RadioGroupItem value="711" id="r1" />
           <Label htmlFor="r1" className="flex space-x-2 items-center">
             <img
-              src="./assets/images/payment-option-logos/Payment_Center_e_Wallet_7_eleven_logo.png"
+              src="/assets/images/payment-option-logos/Payment_Center_e_Wallet_7_eleven_logo.png"
               className="w-[40px] border"
             />
             <span>7 Eleven CLiQQ</span>
@@ -19,7 +19,7 @@ export default function PaymentCenterEWalletForm() {
           <RadioGroupItem value="gcash" id="r1" />
           <Label htmlFor="r1" className="flex space-x-2 items-center">
             <img
-              src="./assets/images/payment-option-logos/Payment_Center_e_Wallet_GCash_logo.png"
+              src="/assets/images/payment-option-logos/Payment_Center_e_Wallet_GCash_logo.png"
               className="w-[40px] border"
             />
             <span>GCash</span>
@@ -29,7 +29,7 @@ export default function PaymentCenterEWalletForm() {
           <RadioGroupItem value="paymaya" id="r1" />
           <Label htmlFor="r1" className="flex space-x-2 items-center">
             <img
-              src="./assets/images/payment-option-logos/img_bankph_maya.png"
+              src="/assets/images/payment-option-logos/img_bankph_maya.png"
               className="w-[40px] border"
             />
             <span>Maya</span>
