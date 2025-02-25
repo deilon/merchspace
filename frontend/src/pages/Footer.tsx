@@ -165,7 +165,7 @@ const Footer = () => {
           <Logo />
 
           <p className="mt-4 text-muted-foreground">
-            Your Trusted Digital Marketplace
+            One Platform. Every Brand. All the Merch.
           </p>
         </div>
 
@@ -191,7 +191,7 @@ const Footer = () => {
       <div className="max-w-(--breakpoint-xl) mx-auto py-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-5 px-6">
         {/* Copyright */}
         <span className="text-muted-foreground text-center xs:text-start">
-          &copy; {new Date().getFullYear()} <Link to="/">Agora</Link>. All
+          &copy; {new Date().getFullYear()} <Link to="/">Merch Spree</Link>. All
           rights reserved.
         </span>
 

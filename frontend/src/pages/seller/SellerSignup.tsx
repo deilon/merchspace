@@ -9,7 +9,7 @@ export default function SellerSignup() {
   return (
     <div className="flex min-h-svh flex-col items-center justify-center p-6 md:p-10">
       <div className="w-full max-w-sm md:max-w-3xl">
-        <div className="flex gap-6 justify-center py-5">
+        <div className="flex gap-6 justify-center items-center py-5">
           <Logo /> <Separator orientation="vertical" />{" "}
           <span className="font-medium">Seller Center</span>
         </div>
